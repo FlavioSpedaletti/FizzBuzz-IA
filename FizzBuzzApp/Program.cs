@@ -1,19 +1,29 @@
-﻿for (int i = 1; i <= 30; i++)
+﻿// See https://aka.ms/new-console-template for more information
+public class FizzBuzzService
 {
-    if (i % 15 == 0)
+    public string GetFizzBuzzValue(int number)
     {
-        Console.WriteLine("FizzBuzz");
+        string result = "";
+        
+        if (number % 3 == 0)
+            result += "Fizz";
+        
+        if (number % 5 == 0)
+            result += "Buzz";
+        
+        return result == "" ? number.ToString() : result;
     }
-    else if (i % 3 == 0)
+}
+
+class Program
+{
+    static void Main(string[] args)
     {
-        Console.WriteLine("Fizz");
-    }
-    else if (i % 5 == 0)
-    {
-        Console.WriteLine("Buzz");
-    }
-    else
-    {
-        Console.WriteLine(i);
+        var fizzBuzzService = new FizzBuzzService();
+        
+        for (int i = 1; i <= 30; i++)
+        {
+            Console.WriteLine(fizzBuzzService.GetFizzBuzzValue(i));
+        }
     }
 }

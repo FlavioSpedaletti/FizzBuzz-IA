@@ -2,7 +2,7 @@
 
 public class FizzBuzzServiceTests
 {
-    /*private readonly FizzBuzzService _fizzBuzzService;
+    private readonly FizzBuzzService _fizzBuzzService;
 
     public FizzBuzzServiceTests()
     {
@@ -49,5 +49,5 @@ public class FizzBuzzServiceTests
     {
         var result = _fizzBuzzService.GetFizzBuzzValue(input);
         Assert.Equal(expected, result);
-    }*/
+    }
 }
