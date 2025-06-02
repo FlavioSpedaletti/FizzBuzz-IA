@@ -12,3 +12,4 @@ C:\projetos\POCs\FizzBuzz-IA\FizzBuzzApp\obj\Debug\net9.0\refint\FizzBuzzApp.dll
 C:\projetos\POCs\FizzBuzz-IA\FizzBuzzApp\obj\Debug\net9.0\FizzBuzzApp.pdb
 C:\projetos\POCs\FizzBuzz-IA\FizzBuzzApp\obj\Debug\net9.0\FizzBuzzApp.genruntimeconfig.cache
 C:\projetos\POCs\FizzBuzz-IA\FizzBuzzApp\obj\Debug\net9.0\ref\FizzBuzzApp.dll
+C:\projetos\POCs\FizzBuzz-IA\FizzBuzzApp\obj\Debug\net9.0\FizzBuzzApp.sourcelink.json
