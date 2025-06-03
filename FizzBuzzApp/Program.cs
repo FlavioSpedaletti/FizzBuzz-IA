@@ -24,17 +24,25 @@ public class FizzBuzzService
     
     public string GetFizzBuzzValue(int number)
     {
-        // Versão com LINQ (mais avançada, salva como referência):
-        // var ruleTexts = string.Join(" ", 
-        //     _rules.Where(rule => number % rule.Key == 0)
+        // Versão com LINQ (mais avançada, com prioridade para múltiplos de 7):
+        // if (number % 7 == 0)
+        //     return number + " Flavio";
+        // var ruleTexts = string.Join("", 
+        //     _rules.Where(rule => rule.Key != 7 && number % rule.Key == 0)
         //           .Select(rule => rule.Value));
-        // string result = ruleTexts == "" ? number.ToString() : number + " " + ruleTexts;
+        // return ruleTexts == "" ? number.ToString() : number + " " + ruleTexts;
         
-        // Versão simples com foreach:
+        // Prioridade para múltiplos de 7
+        if (number % 7 == 0)
+        {
+            return number + " Flavio";
+        }
+        
+        // Versão simples com foreach para outras regras:
         string result = number.ToString();
         foreach (var rule in _rules)
         {
-            if (number % rule.Key == 0)
+            if (rule.Key != 7 && number % rule.Key == 0)
                 result += " " + rule.Value;
         }
         
